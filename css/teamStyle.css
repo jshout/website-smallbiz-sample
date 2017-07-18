@@ -1,0 +1,112 @@
+/* team style sheet */
+
+
+.ted,
+.tedText,
+.tedPic,
+.bill,
+.billPic,
+.billText,
+.jill,
+.jillText,
+.jillPic,
+.tom,
+.tomPic,
+.tomText {
+    display: flex;
+}
+
+.mainContent {
+    flex-direction: column;
+}
+
+.ted,
+.bill,
+.jill,
+.tom {
+    border-bottom: 1px solid #6991ac;
+}
+
+.tedText,
+.billText,
+.jillText,
+.tomText {
+    flex-direction: column;
+    margin: 1em;
+    
+}
+
+.tedPic,
+.billPic,
+.jillPic,
+.tomPic {
+    margin: 1em;
+    flex: 1;
+}
+
+
+.tedText h4,
+.jillText h4 {
+    margin-left: auto;
+}
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (max-width: 410px) {
+    .tedPic img {
+        width: 16em;
+        height: 10em;
+    }
+    
+}
+
+ @media (max-width: 760px) {
+        
+        .mainArea {
+            border: 0;
+        }
+        
+                
+        .mainContent {
+            min-height: 0;
+            min-width: 0;
+    
+        }
+     
+        .ted,
+        .bill,
+        .jill,
+        .tom {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+     }
+     
+     .ted,
+     .jill {
+         flex-direction: column-reverse;
+     }
+     
+     .tedText h4,
+     .jillText h4,
+     .billText h4,
+     .tomText h4 {
+         margin: auto;
+}
+
+        
+  
+    }
+
+/*
+	@media (max-width: 720px) {
+        .mainArea {
+            border: 0;
+        }
+  
+            
+    } */

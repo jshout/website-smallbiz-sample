@@ -1,0 +1,257 @@
+
+/********************************
+* {
+	outline: 2px solid red;
+}
+**********************************/
+
+
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+
+/* ---- Layout Containers ---- */
+
+.wrapper,
+.mainHeader,
+.headerInfo,
+.mainArea,
+.leftSideMenu,
+.sideMenuSmall,
+.mainContent,
+.mainFooter,
+.footerLeft,
+.footerRight {
+    display: flex;
+}
+
+.wrapper {
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.mainHeader {
+    width: 100%;
+    height: 2.5em;
+    background-color: #3e454a;
+    color: white;
+    align-items: center;
+}
+
+.headerInfo {
+    padding-left: 5em;
+    margin-left: auto;
+    margin-right: 2em;
+}
+
+.headerInfo img {
+    padding-top: 1.3em;
+    margin-right: .4em;
+}
+
+.mainArea {
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    flex: 1;
+    border: 2px solid #6991ac;
+    
+    
+}
+
+
+/*********************** left larg ********/
+#leftMenuLrg {
+    flex-direction: column;
+    min-height: 20em;
+    width: 7em;
+    min-width: 7em;
+    background-color: #6991ac;
+    z-index: 50;
+    display: none;
+}
+
+.lrg a {
+   
+    color: white;
+}
+
+.lsHome {
+    margin-top: .8em;
+}
+
+.lsTeam {
+    margin-top: 1.3em;
+}
+
+.lsServices {
+    margin-top: 1.3em;
+}
+
+.lsContact {
+    margin-top: 1.3em;
+}
+
+.lsLocations {
+    margin-top: 1.2em;
+}
+
+.return {
+    margin-top: 1.4em;
+}
+
+/**** end larf ********************/
+
+
+.leftMenu {
+    flex-direction: column;
+    min-height: 20em;
+    width: 2.7em;
+    min-width: 2.7em;
+    background-color: #6991ac;
+        
+}
+
+.sideMenuSmall {
+    flex-direction: column;
+}
+
+
+.lsm {
+   margin-top: .3em;
+    margin-left: .2em;
+}
+
+
+/****** Larg menu ******/
+
+
+
+
+
+.mainContent {
+    min-height: 20em;
+    min-width: 20em;
+    
+}
+
+.mainFooter {
+    width: 100%;
+    min-height: 3em;
+    background-color: #3e454a;
+}
+
+
+
+/* ---- top nav button ---- */
+.menuBtn {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: .4em;
+    background: #f6f6f6;
+    line-height: 0;
+    text-decoration: none;
+    color: black;
+    border-radius: 1px;
+    cursor: pointer;
+    z-index: 20;
+}
+    
+    /*Hamburger icon*/
+.menuBtn:before {
+            display: block;
+            padding: 11px 0;
+            content: '≡';
+            font-size: 3em;
+            line-height: 0;
+        }
+
+
+
+/* ---- side menu small ---- */
+
+
+
+/*  ----- Footer  -------- */
+
+.mainFooter {
+    
+}
+
+.footerLeft {
+    flex-direction: row;
+    color: white;
+    margin-right: auto;
+    margin-left: 3em;
+}
+
+.footerPhone {
+    margin-left: 1em;
+}
+
+.footerRight {
+    flex-direction: row;
+    margin-right: 3em;
+    
+}
+
+.footerRight a {
+    color: white;
+    padding: 1em;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+	@media (max-width: 500px) {       
+        .footerRight {
+            flex-direction: column;
+        }
+        
+        .footerLeft p {
+            margin-left: 0;
+            font-size: .7em;
+        }
+        
+    }
+
+    @media (max-width: 700px) {
+        .footerLeft {
+            flex-direction: column;
+        }
+        .footerPhone {
+            margin-left: 0;
+            font-size: .8em;
+        }
+    }
+
+
+    @media (min-width: 1025px) {
+		
+	}
+
+
+
+
+
+
+
+

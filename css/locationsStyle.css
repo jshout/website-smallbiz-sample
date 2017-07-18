@@ -1,0 +1,76 @@
+/* locations style sheet */
+/********************************
+* {
+	outline: 2px solid red;
+}
+**********************************/
+
+
+
+.mainContent {
+   flex-direction: row;
+    margin: auto;
+    
+}
+
+.lcontentLeft,
+.lcontentRight,
+.lcontentTop,
+.lcontentBottom {
+    display: flex;
+}
+
+.lcontentLeft {
+    flex-direction: column;
+    width: 50%;
+    margin-right: 2em;
+    color: #6991ac;
+    
+}
+
+.lcontentBottom,
+.lcontentTop {
+    flex-direction: column;
+}
+
+.lcontentTop h3 {
+    margin-bottom: 0;
+}
+
+.lcontentRight {
+    width: 50%;
+}
+
+.lcontentTop h3 {
+    margin-bottom: 0;
+}
+
+.lcontentBottom h4, h5 {
+    margin: 0;
+}
+
+.lcontentBottom h5 {
+    margin-bottom: 0;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+	@media (max-width: 600px) {
+        .mainContent {
+            flex-direction: column;
+        }
+        
+    }
+
+    @media (min-width: 769px) {
+        
+  
+    }
+
+
+    @media (min-width: 1025px) {
+		
+	}

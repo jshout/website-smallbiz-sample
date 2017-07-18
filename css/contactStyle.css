@@ -1,0 +1,102 @@
+/* contact page style sheet */
+
+/********************************
+* {
+	outline: 2px solid red;
+}
+**********************************/
+
+
+.CNTmainContent,
+.CNTIconsHead,
+.CNTIcons,
+.CNTHeading,
+.CNTformDiv,
+.formName,
+.companyName,
+.phone,
+.CNTemail,
+.formDate,
+.time,
+.comments,
+.formButton {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.CNTIconsHead {
+    align-items: center;
+}
+
+.CNTIconsHead h3 {
+    color: #6991ac;
+}
+
+.CNTHeading h3 {
+    color: #6991ac;
+}
+
+.CNTHeading {
+    margin-top: 3em;
+}
+
+.CNTHeading h3 {
+    margin-bottom: 0;
+}
+
+.CNTIcons {
+    flex-direction: row;
+    
+}
+
+.formName,
+.companyName,
+.phone,
+.CNTemail,
+.formDate,
+.time,
+.comments {
+    margin-bottom: 1em;
+    color: #6991ac;
+    font-weight: 600;
+}
+
+.formButton {
+    margin-bottom: 2em;
+    color: #6991ac;
+}
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+	@media (max-width: 360px) {       
+        .formDate {
+            margin: 0;
+        }
+
+        .comments {
+             max-width: 13em;
+            height: auto;
+        }
+        
+                
+        .CNTHeading h3 {
+            font-size: 1em;
+        }
+
+
+    }
+
+    @media (min-width: 769px) {
+  
+    }
+
+
+    @media (min-width: 1025px) {
+		
+	}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>One on One Business Services</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/contactStyle.css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+		<script src="js/jquery-2.2.0.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <!--<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>-->
+       
+    </head>
+    <body>
+        
+        <div class="wrapper">
+            
+            <header class="mainHeader">
+                <div class="mainBtn" title="Menu">
+                    <a href="#"><button class="menuBtn"></button></a>
+                </div>
+                <div class="headerInfo">
+                    <a href="#"><img src="icons/face_s.png"></a>
+                    <a href="#"><img src="icons/twitter_s.png"></a>
+                    <h6>One on One Business Services 555-555-5555</h6>
+                </div>  
+            </header>
+                        
+            <div class="mainArea">
+                
+                <div id="leftMenu" class="leftMenu">
+                    
+                   <div class="sideMenuSmall">
+                        <div class="lsHome lsm">
+                        <a class="lsLink" title="Home" href="index.html"><img src="iconsMenu/HomeIcon1.gif" height="30" width="30"></a>
+                    </div>
+                    <div class="lsTeam lsm">
+                        <a class="lsLink" title="Team" href="team.html"><img src="iconsMenu/TeamIcon1.gif" height="30" width="30"></a>
+                    </div>
+                    <div class="lsServices lsm">
+                        <a title="Services" href="services.html"><img src="iconsMenu/ProductsIcon1.gif" height="30" width="30"></a>
+                    </div>
+                    <div class="lsContact lsm">
+                        <a title="Contact" href="contact.html"><img src="iconsMenu/ContactIcon1.gif" height="30" width="30"></a>
+                    </div>
+                    <div class="lsLocations lsm">
+                        <a title="Locations" href="locations.html"><img src="iconsMenu/LocationIcon1.gif" height="30" width="30"></a>
+                    </div> 
+                  </div> <!-- end sideMenuSmall -->
+                </div>
+                
+                
+                <div class="leftMenuLrg" id="leftMenuLrg">
+                    <div class="sideMenuSmall">
+                        <div class="lsHome lrg">
+                        <a class="lsLink" title="Home" href="index.html">Home</a>
+                    </div>
+                    <div class="lsTeam lrg">
+                        <a class="lsLink" title="Team" href="team.html">Team</a>
+                    </div>
+                    <div class="lsServices lrg">
+                        <a title="Products" href="services.html">Services</a>
+                    </div>
+                    <div class="lsContact lrg">
+                        <a title="Contact" href="contact.html">Contact</a>
+                    </div>
+                    <div class="lsLocations lrg">
+                        <a title="Locations" href="locations.html">Locations</a>
+                    </div>
+                    <div class="return lrg">
+                        <a title="return" href="http://127.0.0.1/joeshout/index.html">Return - JoeShout</a>
+                    </div> 
+                  </div> 
+                </div>
+                    
+                
+                <div class="CNTmainContent">
+                    
+                    <div class="CNTIconsHead">
+                        <h3>Connect with us</h3>
+                        <div CNTIcons>
+                            <a href="#"><img src="icons/mail.png"></a>
+                            <a href="#"><img src="icons/phone.png"></a>
+                            <a href="#"><img src="icons/facebook.png"></a>
+                            <a href="#"><img src="icons/twitter.png"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="CNTHeading">
+				        <h3 class="CNTHeadText">Schedule a free consultation</h3>
+                        <h6>NOTE: Example only. Form does not send data.</h6>
+                        
+                    </div>
+                    
+                    <form class="mainForm" action="" method="post">
+                                       
+                    <div class="CNTformDiv">
+                        <div class="formName">
+                            <label for="name">Full name (required):</label>
+                            <input type="text" id='name' minlength='2' required>
+                        </div>
+                        <div class="companyName">
+                            <label for="company">Company name:</label>
+                            <input type="text" id='company'>
+                        </div>
+                        <div class="phone">
+                            <label for="phone">Phone number:</label>
+                            <input type="text" id='Phone'>
+                        </div>
+                        <div class="CNTemail">
+                            <label for="phone">Email address (required):</label>
+                            <input type="text" id='email' required>
+                        </div>
+                        <div class="formDate">
+                            <label for="datepicker">Choose date:</label>
+				            <input id="datepicker">
+				            <span id="inline"></span>
+                        </div>
+                        <div class="time">
+                            <label for="time">Choose time:</label>
+                            <select id="time" name="mydropdown">
+				                <option value="8to9a">8:00am - 9:00am</option>
+				                <option value="9to10a">9:00am - 10:00am</option>
+				                <option value="10to11a">10:00am - 11:00am</option>
+				                <option value="11to12a">11:00am - 12:00am</option>
+                                <option value="1to2p">1:00pm -2:00pm</option>
+                                <option value="2to3p">2:00pm - 3:00pm</option>
+                                <option value="3to4p">3:00pm - 4:00pm</option>
+                                <option value="4to5p">4:00pm - 5:00pm</option>
+				            </select>
+                            
+                        </div>
+                        <div class="comments">
+                            <label for="comments">Comments:</label>
+                            <textarea name="comments" rows="10" cols="30"></textarea>
+                        </div>
+                        
+                        <div class="formButton">
+                            <input class="subButton" type="submit" value="Submit">
+                        </div>
+                                    
+                    </div>
+                        
+                    </form>    
+                    
+                </div> <!-- CNT mainContent end -->
+                
+            </div>    
+           	            
+            <footer class="mainFooter">
+                <div class="footerLeft">
+                    <p>One on One</p><p class="footerPhone">555-555-5555</p>    
+                </div>
+                <div class="footerRight">
+                    <a href="index.html">Home</a>
+                    <a href="team.html">Team</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="locations.html">Location</a>
+                    <a href="http://www.joeshout.com">Return</a>
+                </div>
+                     
+            </footer>
+            
+        </div>
+    
+    <script src="js/jqscript.js"></script>
+    <script src="js/jqcontact.js"></script>    
+    </body>
+    </html>

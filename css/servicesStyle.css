@@ -1,0 +1,94 @@
+/* services style sheet */
+
+
+/********************************
+* {
+	outline: 2px solid red;
+}
+**********************************/
+
+
+
+.mainContent,
+.svcAll,
+.svcPic,
+.svcText,
+.svcLrg,
+.svcSml {
+    display: flex;
+}
+
+.mainContent {
+    flex-direction: row;
+    min-height: 2em;
+    min-width: 2em;
+    width: 100%;
+}
+
+.svcAll {
+    flex-direction: column;
+    border-right: 1px solid #6991ac;
+    border-left: 2px solid #6991ac;
+   
+    
+}
+
+.svcLrg {
+    width: 70%;
+    height: auto;
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+    border-right: 0;
+    border-left: 0;
+}
+
+.svcSml {
+    width: 10%;
+    height: auto;
+    background-color: #29497f;
+    color: gray;
+    overflow: hidden;
+}
+
+.svcSml p {
+    display: none;
+}
+
+.svcPic,
+.svcText{
+    align-self: center;
+}
+
+
+.svcPic {
+    width: 6em;
+    height: 7em;
+}
+
+.svcPic img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/*
+	@media (max-width: 360px) {       
+        
+    }
+
+    @media (min-width: 769px) {
+  
+    }
+
+
+    @media (min-width: 1025px) {
+		
+	}
+
+*/

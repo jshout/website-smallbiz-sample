@@ -1,0 +1,139 @@
+/* front page style */
+
+
+/********************************
+* {
+	outline: 2px solid red;
+}
+**********************************/
+
+
+.frontTop,
+.frontTopPic,
+.frontTopText,
+.frontBottom,
+.frontBottomText,
+.frontBottomPic {
+    display: flex;
+}
+
+.mainContent {
+    flex-direction: column;
+    
+    
+}
+
+.frontTopPic,
+.frontTopText {
+    margin: 1em;
+}
+
+.frontTopPic img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.frontTopPic {
+    width: 100%;
+    height: 30em;
+}
+
+/*.frontTopText {
+    flex-direction: column;
+    width: 40%;
+}*/
+
+.frontBottom {
+    margin-top: 5em;
+    margin-left: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.frontBottomText {
+   align-self: center;
+    margin-right: 2em;
+}
+
+.frontBottomPic {
+    margin-right: 2em;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+    @media (max-width: 370px) {
+        
+        .mainArea {
+            border: 0;
+        }
+        
+        .frontTop,
+        .frontBottom {
+            flex-direction: column;
+            
+        }
+        
+        .frontTopPic,
+        .frontTopText,{
+           padding-right: 5em;
+        }
+        
+        .mainContent {
+            min-height: 0;
+            min-width: 0;
+    
+        }
+        
+  
+    }
+
+
+	@media (max-width: 720px) {
+        .mainArea {
+            border: 0;
+        }
+        
+        
+        .frontTop,
+        .frontBottom {
+            flex-direction: column;
+        }
+        
+        .frontTopPic {
+            width: 99%;
+            height: auto;
+            margin: auto;
+        }
+
+        /*.frontTopText {
+            width: 99%;
+            margin: auto;
+        }*/
+        
+            
+    }
+
+    
+
+
+    @media (min-width: 1025px) {
+		
+	}
+
+/*
+
+.frontTopPic,
+        .frontTopText {
+            width: 100%;
+            height: auto;
+            margin: .5em;
+        }
+        
+        .frontTopPic img {
+            width: 99%;
+            height: auto;
+    
+        }**/
